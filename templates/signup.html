@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title> Laptop Price Prediction </title>
+	<style> * {font-size:40px;}</style>
+</head>
+<body>
+<center>
+<h1>Sign Up Page</h1>
+<form action = "/signup" method="POST">
+	<input type="email" name="un" placeholder="enter email" required>
+	<br><br>
+
+	<input type="submit" value="Send Password">
+</form>
+	{{msg}}
+<a href="{{ url_for('login') }}">Login</a>
+</center>
+</body>
+</html>

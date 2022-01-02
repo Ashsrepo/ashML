@@ -1,0 +1,63 @@
+<html>
+<head>
+<title> Laptop Price Prediction</title>
+<style> * {font-size:40px;} 
+	</style>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<center>
+<h1> Laptop Price Prediction</h1>
+<form action="/check", method="POST">
+	<br>
+	<label for="">Processing Speed(GHz)</label>
+	<select type = "number" name="speed">
+  	<option value="1.6">1.6</option>
+  	<option value="1.8">1.8</option>
+ 	<option value="2.1">2.1</option>
+	<option value="2.3">2.3</option>
+	<option value="2.4">2.4</option>
+	<option value="2.6">2.6</option>
+	<option value="3.1">3.1</option>
+	<option value="3.5">3.5</option>
+	</select>
+	<br>
+	<label for="">Size of RAM:</label>
+	<select type = "number" name="RAM">
+  	<option value="4">4</option>
+  	<option value="8">8</option>
+ 	<option value="16">16</option>
+	<option value="32">32</option>
+	</select>
+	<br>
+	<label for="">SSD Size:</label>
+	<select type = "number" name="SSD">
+  	<option value="128">128</option>
+  	<option value="256">256</option>
+ 	<option value="512">512</option>
+	</select>
+	<br>
+	<label for="">Graphics(GB):</label>
+	<select type = "number" name="graphics">
+  	<option value="1">1</option>
+  	<option value="2">2</option>
+ 	<option value="3">3</option>
+	<option value="4">4</option>
+	</select>
+	<br>
+	<label for="">Screen Size:</label>
+	<select type = "number" name="size">
+  	<option value="14.0">14.0</option>
+  	<option value="15.0">15.0</option>
+ 	<option value="15.6">15.6</option>
+	<option value="17.3">17.3</option>
+	</select>
+	<br><br>
+	<input type="submit">
+	<br>
+
+</form>
+{{msg}}
+</center>
+</body>
+</html>

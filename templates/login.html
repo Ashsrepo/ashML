@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title> Laptop Price Prediction </title>
+	<style> * {font-size:40px;}</style>
+</head>
+<body>
+<center>
+<h1>login page </h1>
+<form action = "/login" method="POST">
+	<input type="text" name="un" placeholder="enter username" required>
+	<br><br>
+	<input type="password" name="pw" placeholder="enter password" required>
+	<br><br>
+	<input type="submit" value="Login">
+</form>
+	{{msg}}
+<a href="{{ url_for('signup')}}">New Users Signup here </a>
+<br>
+<a href="{{ url_for('forgotpassword')}}">Forgot Password</a>
+</center>
+</body>
+</html>
